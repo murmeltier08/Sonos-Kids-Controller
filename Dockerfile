@@ -12,13 +12,14 @@ RUN unzip master.zip
 RUN rm master.zip 
 WORKDIR /Sonos-Kids-Controller-master
 RUN npm install ionic build --prod
-WORKDIR /server/config
-VOLUME /server/config
-COPY /server/config/config-example.json /server/config/config.json
-RUN npm start
-RUN sudo npm install pm2 -g
+ADD ./server/config/config-example.json ./server/config/config.json
+VOLUME ./server/config
+EXPOSE 8200
+#RUN /bin/bash
+#RUN npm start
+#RUN sudo npm install pm2 -g
 
-RUN pm2 startup
-RUN WORKDIR /Sonos-Kids-Controller-master
-RUN pm2 start server.js
-RUN pm2 save
+#RUN pm2 startup
+#RUN WORKDIR /Sonos-Kids-Controller-master
+#RUN pm2 start server.js
+#RUN pm2 save
