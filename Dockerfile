@@ -1,9 +1,11 @@
-FROM balenalib/raspberry-pi-debian:latest-20201118
-#INSTALL  
-RUN apt-get update
-RUN apt-get install npm
-RUN apt-get install wget
-RUN apt-get install unzip
+#FROM balenalib/raspberry-pi-debian:latest-20201118
+FROM node:15-alpine
+#INSTALL old 
+#RUN apt-get update
+#RUN apt-get install npm
+#RUN apt-get install wget
+
+#RUN apt-get install unzip
 # debug could not get uid/gid error.
 RUN npm config set unsafe-perm true
 RUN npm install -g @ionic/cli
