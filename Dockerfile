@@ -18,7 +18,7 @@ ADD ./server/config/config-example.json ./server/config/config.json
 VOLUME ./server/config
 EXPOSE 8200
 #RUN /bin/bash
-#RUN npm start
+CMD npm start
 #RUN sudo npm install pm2 -g
 
 #RUN pm2 startup
