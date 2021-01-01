@@ -4,18 +4,18 @@ FROM node:15-alpine
 #RUN apt-get update
 #RUN apt-get install npm
 #RUN apt-get install wget
-
-#RUN apt-get install unzip
-# debug could not get uid/gid error.
 RUN npm config set unsafe-perm true
 RUN npm install -g @ionic/cli
+#RUN apt-get install unzip
+# debug could not get uid/gid error.
 RUN wget https://github.com/Thyraz/Sonos-Kids-Controller/archive/master.zip
 RUN unzip master.zip
 RUN rm master.zip 
 WORKDIR /Sonos-Kids-Controller-master
+ADD ./src ./www
 RUN npm install ionic build --prod
 ADD ./server/config/config-example.json ./server/config/config.json
-VOLUME ./server/config
+#VOLUME /Sonos-Kids-Controller-master/server/config
 EXPOSE 8200
 #RUN /bin/bash
 CMD npm start
