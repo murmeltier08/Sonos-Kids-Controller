@@ -22,5 +22,5 @@ The data.json will also stored in the volumes.
 
 # Example code
 ```
- docker run -it -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
+ docker run -p 8200:8200 -p 5005:5005 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
 ```
