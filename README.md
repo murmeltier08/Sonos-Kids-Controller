@@ -20,10 +20,10 @@ You need to define the config.json for the /Sonos-Kids-Controller-master/server/
 ```
 The data.json will also stored in the volumes. 
 So you will have your artist/albums after restart of the container.
-You need to open Port 8200 and 5005(?)
+You need to open Port 8200
 
 
 # Example code
 ```
- docker run -p 8200:8200 -p 5005:5005 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
+ docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
 ```
