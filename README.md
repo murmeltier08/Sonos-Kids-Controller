@@ -1,5 +1,5 @@
 # Sonos-Kids-Controller Docker 
-Refer to https://github.com/Thyraz/Sonos-Kids-Controller for all the configuration detail
+Refer to https://github.com/Thyraz/Sonos-Kids-Controller for all the configuration detail.
 You need to define the config.json for the /Sonos-Kids-Controller-master/server/config/ 
 
 ```
@@ -18,8 +18,9 @@ You need to define the config.json for the /Sonos-Kids-Controller-master/server/
     }
 }
 ```
-The data.json will also stored in the volumes. So you will have your artist/albums after restart of the container.
-You need to open Port 8200 and 5005 !
+The data.json will also stored in the volumes. 
+So you will have your artist/albums after restart of the container.
+You need to open Port 8200 and 5005(?)
 
 
 # Example code
