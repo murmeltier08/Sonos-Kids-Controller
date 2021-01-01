@@ -17,7 +17,7 @@ You need to define the config.json for the /Sonos-Kids-Controller-master/server/
     }
 }
 ```
-The data.json will also stored in the volumes. 
+The data.json will also stored in the volumes. So you will have your artist/albums after restart of the container
 
 
 # Example code
