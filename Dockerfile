@@ -1,6 +1,6 @@
-RUN apt-get update
 FROM balenalib/raspberry-pi-debian:latest-20201118
 #INSTALL  
+RUN apt-get update
 RUN apt-get install npm
 RUN apt-get install wget
 RUN apt-get install unzip
