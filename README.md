@@ -27,7 +27,7 @@ Tested with Docker Desktop for Mac x64
 ```
  docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
 ```
-# Recommanded How To für Raspberry PI
+# Recommanded How To für Raspberry PI & x64
 
 ## Docker compose
 ```
