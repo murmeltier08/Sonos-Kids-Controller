@@ -58,3 +58,22 @@ Name e.g. sonoskids
 ```
 sudo docker build -t sonoskids . -f  /docker/test/Dockerfile
 ```
+5. docker compose for Portainer
+Check under "images" in Portainer the image with name "sonoskids"
+```
+version: "3"
+networks:
+  outside:
+    external:
+      name: "yournetwork"
+services:
+  sonoskids:
+    image: sonoskids:latest
+    restart: always
+    ports:
+      - 8200:8200
+    volumes:
+       - /docker/sonoskids/config:/Sonos-Kids-Controller-master/server/config/
+    networks:
+      - outside
+```
