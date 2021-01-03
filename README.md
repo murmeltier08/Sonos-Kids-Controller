@@ -59,7 +59,8 @@ Name e.g. sonoskids
 sudo docker build -t sonoskids . -f  /docker/test/Dockerfile
 ```
 5. docker compose for Portainer
-Check under "images" in Portainer the image with name "sonoskids"
+
+Check under "images" in Portainer the image with name "sonoskids" exist.
 ```
 version: "3"
 networks:
