@@ -27,7 +27,24 @@ Tested with Docker Desktop for Mac x64
 ```
  docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
 ```
-# Create image at Raspberry PI - experimential 
+# Recommanded How To für Raspberry PI
+
+
+
+
+# Documentation
+## Create image for docker Hub with Mac x64 for ARM
+https://www.docker.com/blog/multi-arch-images/
+
+```
+docker buildx use mybuilder
+docker buildx inspect --bootstrap
+```
+push to github / docke hub
+```
+docker buildx build --platform linux/amd64,linux/arm/v6 -t murmeltier08/sonos-kids-controller:latest --push .
+```
+## Create image at Raspberry PI - experimential
 
 1. Create dir e.g. docker/test in your @RaspberryPI
 2. Download Repo from git
