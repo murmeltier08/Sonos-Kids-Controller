@@ -11,5 +11,4 @@ RUN npm install
 RUN ionic build --prod
 ADD ./server/config/config-example.json ./server/config/config.json
 EXPOSE 8200
-USER node
 CMD npm start
