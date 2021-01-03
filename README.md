@@ -30,7 +30,7 @@ Tested with Docker Desktop for Mac x64
 # Recommanded How To für Raspberry PI
 
 ## Docker compose
-
+```
 version: "3"
 networks:
   outside:
@@ -46,7 +46,7 @@ services:
        - /docker/sonoskids/config:/Sonos-Kids-Controller-master/server/config/
     networks:
       - outside
-
+```
 
 
 # Documentation
