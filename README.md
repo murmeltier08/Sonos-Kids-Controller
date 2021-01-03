@@ -22,13 +22,12 @@ The data.json will also stored in the volume.
 So you will store your artist/albums after restart of the container.
 You need to open Port 8200
 
-# Example code
+#  Example
+## Code to run container
 Tested with Docker Desktop for Mac x64 
 ```
  docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
 ```
-# Recommanded How To für Raspberry PI & x64
-
 ## Docker compose
 ```
 version: "3"
