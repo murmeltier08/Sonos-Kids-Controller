@@ -29,6 +29,23 @@ Tested with Docker Desktop for Mac x64
 ```
 # Recommanded How To für Raspberry PI
 
+## Docker compose
+
+version: "3"
+networks:
+  outside:
+    external:
+      name: "yournetwork"
+services:
+  sonoskids:
+    image: sonoskids:latest
+    restart: always
+    ports:
+      - 8200:8200
+    volumes:
+       - /docker/sonoskids/config:/Sonos-Kids-Controller-master/server/config/
+    networks:
+      - outside
 
 
 
