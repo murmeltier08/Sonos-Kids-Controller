@@ -27,9 +27,9 @@ Tested with Docker Desktop for Mac x64
 ```
  docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
 ```
-# Running at Raspberry PI - experimential 
+# Create image at Raspberry PI - experimential 
 
-1. Create dir e.g. docker/test
+1. Create dir e.g. docker/test in your @RaspberryPI
 2. Download Repo from git
 ```
 cd /docker/test/
