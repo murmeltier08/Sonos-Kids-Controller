@@ -19,7 +19,7 @@ You need to define the config.json for the /Sonos-Kids-Controller-master/server/
 }
 ```
 The data.json will also stored in the volume. 
-So you will have your artist/albums after restart of the container.
+So you will store your artist/albums after restart of the container.
 You need to open Port 8200
 
 # Example code
@@ -61,7 +61,7 @@ push to github / docke hub
 ```
 docker buildx build --platform linux/amd64,linux/arm/v6 -t murmeltier08/sonos-kids-controller:latest --push .
 ```
-## Create image at Raspberry PI - experimential
+## Create image with Raspberry PI
 
 1. Create dir e.g. docker/test in your @RaspberryPI
 2. Download Repo from git
