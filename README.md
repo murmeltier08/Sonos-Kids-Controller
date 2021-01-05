@@ -23,12 +23,23 @@ So you will store your artist/albums after restart of the container.
 You need to open Port 8200
 
 #  Example
+## Recommended Version: stable-v1
+
+Supported architectures: 
+
+[Linux/ARM/V6](https://hub.docker.com/layers/murmeltier08/sonos-kids-controller/latest/images/sha256-c5d9da532b39b3886078d871f43c76aba6ad844b39ef164cf9e3ba7a93c3eef4?context=explore)
+[Linux/AMD64](https://hub.docker.com/layers/murmeltier08/sonos-kids-controller/latest/images/sha256-68bb565656f64c9a1dbfd5edd527804403fad5c15f049a62ac5ee1a5340f33bf?context=explore)
+
+
+
 ## Code to run container
 Tested with Docker Desktop for Mac x64 
 ```
- docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller 
+ docker run -p 8200:8200 -v /your/local/path/for/config:/Sonos-Kids-Controller-master/server/config/ murmeltier08/sonos-kids-controller:stable-v1
 ```
 ## Docker compose
+
+
 ```
 version: "3"
 networks:
@@ -37,7 +48,7 @@ networks:
       name: "yournetwork"
 services:
   sonoskids:
-    image: sonoskids:latest
+    image: sonoskids:stable-v1
     restart: always
     ports:
       - 8200:8200
