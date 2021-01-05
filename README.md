@@ -27,8 +27,8 @@ You need to open Port 8200
 
 Supported architectures: 
 
-[Linux/ARM/V6](https://hub.docker.com/layers/murmeltier08/sonos-kids-controller/latest/images/sha256-c5d9da532b39b3886078d871f43c76aba6ad844b39ef164cf9e3ba7a93c3eef4?context=explore)
-[Linux/AMD64](https://hub.docker.com/layers/murmeltier08/sonos-kids-controller/latest/images/sha256-68bb565656f64c9a1dbfd5edd527804403fad5c15f049a62ac5ee1a5340f33bf?context=explore)
+[Linux/AMD64](https://hub.docker.com/layers/murmeltier08/sonos-kids-controller/latest/images/sha256-c5d9da532b39b3886078d871f43c76aba6ad844b39ef164cf9e3ba7a93c3eef4?context=explore)
+[Linux/ARM/V6](https://hub.docker.com/layers/murmeltier08/sonos-kids-controller/latest/images/sha256-68bb565656f64c9a1dbfd5edd527804403fad5c15f049a62ac5ee1a5340f33bf?context=explore)
 
 
 
